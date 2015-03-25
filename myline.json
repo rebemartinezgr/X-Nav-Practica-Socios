@@ -1,23 +1,23 @@
-[{
-"autor": "yo",
-"avatar": "avatar.jpg",
-"titulo": "¿quedamos el viernes?",
-"contenido" : "Chicos puesto que la semana que viene no estare en madrid, que os aprece si nos juntamos todos el viernes para cenar?",
-"fecha" : "13/02/15"
-},
-
+[
 {
 "autor": "yo",
-"avatar": "avatar.jpg",
+"avatar": "maria.jpg",
+"titulo": "Atencion!",
+"contenido" : "A todos mis contactos: me han robado el teléfono móvil. Has que consiga un terminal, por favor podeis contactarme por mail",
+"fecha" : "14/01/15"
+},
+{
+"autor": "yo",
+"avatar": "maria.jpg",
 "titulo": "Deseando que acabe la semana",
 "contenido" : "Despues una semana llenita de reuniones lo que necesito son vacaciones!",
 "fecha" : "7/02/15"
 },
-
 {
 "autor": "yo",
-"avatar": "avatar.jpg",
-"titulo": "Atencion!",
-"contenido" : "A todos mis contactos: me han robado el teléfono móvil. Has que consiga un terminal, por favor podeis contactarme por mail",
-"fecha" : "14/01/15"
+"avatar": "maria.jpg",
+"titulo": "¿quedamos el viernes?",
+"contenido" : "Chicos puesto que la semana que viene no estare en madrid, que os aprece si nos juntamos todos el viernes para cenar?",
+"fecha" : "13/02/15"
+
 }]

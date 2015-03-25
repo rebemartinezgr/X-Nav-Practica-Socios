@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-
+	var nmens = 0;
 	$(function() {
 		$( "#tabs" ).tabs();
 	});
@@ -38,18 +38,27 @@ $(document).ready(function(){
 	});
 
 	function MakeMsg(data, tab){
+	for(var i=nmens ; i < (data.length+ nmens) ;i+=1){
 	
-	for(var i=0 ; i < data.length;i+=1){
-	$(tab+" .comment-list").prepend('<article class = "'+i+'" class="row"><div class="col-md-2 col-sm-2 hidden-xs"><figure class="thumbnail">' +'<img class="img-responsive" src="'+ data[i].avatar + '"/><figcaption class="text-center">'+data[i].autor+ '</figcaption> </figure></div><div class="col-md-10 col-sm-10"><div class="panel panel-default arrow left"> <div class="panel-body">'+
-               '<header class="text-left"><div class="comment-user"><i class="fa fa-user"></i>'+data[i].titulo+ '</div><time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> '+data[i].fecha+'</time></header><div class="comment-post"><p>'+
-                    data[i].contenido+'</p></div><p class="text-right"><a id="'+i+'" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> leer mas </a></p>'+' </div></div></div></article>');
-	$("."+(i)+" .comment-post").hide();
-	$(tab+" #"+i).click(function(event){
-		console.log(tab+" ."+this.id+" .comment-post");
-		$(tab+" ."+this.id+" .comment-post").show();
-		
+	$(tab+" .comment-list").prepend('<article class = "'+i+'" class="row"><div class="col-md-2 col-sm-2 hidden-xs"><figure 		 class="thumbnail">' +'<img class="img-responsive" src="'+ data[i-nmens].avatar + '"/><figcaption class="text-center">'+data[i-nmens].autor+ '</figcaption> </figure></div><div class="col-md-10 col-sm-10"><div class="panel panel-default arrow left"> <div class="panel-body">'+
+'<header class="text-left"><div class="comment-user"><i class="fa fa-user"></i>'+data[i-nmens].titulo+ '</div><time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> '+data[i-nmens].fecha+'</time></header><div class="comment-post"><p>'+data[i-nmens].contenido+'</p></div><p class="text-right"><a id="'+i+'" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> leer mas </a><a id="menos'+i+'" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> leer menos</a></p>'+' </div></div></div></article>');
+	
+	$("#menos"+i+"").hide(); /*esconde el boton de leer menos */
+	$("."+(i)+" .comment-post").hide(); /*oculta el contenido del mensaje*/
+	$("#"+i).click(function(event){ 
+		$("."+this.id+" .comment-post").show(); /*muestra el contenido cuando se pica en leer mas*/
+		$("#menos"+this.id+"").show(); /*muestra el boton de leer menos cuando se pica en leer mas*/
+		$(" #"+this.id).hide(); /*esconde boton de leer mas*/
+		$("#menos"+this.id+"").click(function(){ /*programa comportamiento para cunado se pique boton de leer menos*/
+			$("."+event.currentTarget.id+" .comment-post").hide(); /*oculta el contenido del mensaje*/
+			$("#menos"+event.currentTarget.id+"").hide(); /*oculta boton de leer menos*/
+			$(" #"+event.currentTarget.id).show(); /*muestra el boton de leer mas*/
+		});
 	});
+	
 	};
+
+	nmens = nmens + data.length;
 	};
 
 	

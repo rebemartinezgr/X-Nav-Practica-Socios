@@ -1,42 +1,63 @@
 
 body{
-
-
+	background-image: url("fondo.jpg");
+	width: 1500px;
 }
 #tabs{
-	width: 1500px;
-	margin-left: 20px;
-	height: 1500px;
+	width: 1200px;
+	margin-left: 100px;
+	height: 500px;
 }
 
+#tabs-1, #tabs-2{
+	background-color: #1E90FF;
+	
+}
 #header{
-	margin-left: 20px;
+	width: 1500px;
+	margin-left: 100px;
 	margin-top: 15px;
+	
 }
 
 #title1{
-	font-size: 100px;
-	color: blue;
+	margin-left: 40px;
+	font-size: 85px;
+	color: #1E90FF;
+	font-weight: bold;
 }
 #title2{
 
-	font-size: 60px;
+	font-size: 50px;
 	color: orange;
 }
 #mn{
 	color: red;
-
 }
 
 #logo{
 	width: 250px;
-	margin-left: 300px;
+	margin-left: 120px;
 	height: 250px;
 }
 
 #boton{
-	margin-left: 900px;
+	margin-left: 850px;
+	margin-bottom: 10px;
 	
+}
+.col-md-8{
+	margin-left: 150px;
+}
+.img-responsive{
+	width:50px;
+	height: 50px;
+	
+}
+
+.ui-tabs-anchor{
+	width: 200px;
+	height: 40px;
 }
 
  /*font Awesome http://fontawesome.io*/
