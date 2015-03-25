@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html>
    <head>
-     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-     <script type="text/javascript" src="myjQuery.js" charset="utf-8"></script>
-</head>
-	<body>
-   		
-		<p> prueba para servir una pagina con gh-pages</p>
-	</body>
+     	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" href="jquery-ui.min.css">
+	<link rel="stylesheet" href="socios.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">	
+   	<script type="text/javascript" src="myjQuery.js" charset="utf-8"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<script type="text/javascript" src = "socios.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+	
+	<div id="header">
+		<span class="page-header"><large id= title1>SOCIOS <small id= title2>Tu nueva red social</small></large>
+		<img id = logo src= "redsocial.jpg"></img></span>
+		
+	</div>
+	<div id="tabs">
+		<ul>
+		<li><a href="#tabs-1">Timeline</a></li>
+		<li><a href="#tabs-2">Sent Messages</a></li>
+		<button id= boton type="button" class="btn btn-default btn-lg">
+  		<span id= mn class="glyphicon glyphicon-alert" aria-hidden="true"> Tienes mensajes nuevos </span> 
+		</button>
+		</ul>
+
+		<div id="tabs-1">
+		<div class="container">
+  			<div class="row">
+    			<div class="col-md-8">
+      			<section class="comment-list"></section>
+		</div>
+		</div>
+		</div>
+		</div>
+
+		<div id="tabs-2">
+		<div class="container">
+  			<div class="row">
+    			<div class="col-md-8">
+      			<section class="comment-list"></section>
+		</div>
+		</div>
+		</div>
+		</div>
+	</div>
+    </body>
 </html>
+
+
+

@@ -1,0 +1,31 @@
+[{
+"autor": "maria",
+"avatar": "avatar.jpg",
+"titulo": "¿quedamos el viernes?",
+"contenido" : "Chicos puesto que la semana que viene no estare en madrid, que os aprece si nos juntamos todos el viernes para cenar?",
+"fecha" : "13/02/15"
+},
+
+{
+"autor": "jose",
+"avatar": "avatar.jpg",
+"titulo": "perfecto!",
+"contenido" : "Me parece una idea estupenda. Concretemos hora y lugar",
+"fecha" : "13/02/15"
+},
+
+{
+"autor": "paco",
+"avatar": "avatar.jpg",
+"titulo": "viernes imposible",
+"contenido" : "lo siento chicos pero el viernes estaré al cargo de mi abuela. La mujer esta ya mayor y necesita compañia¿que os parece el sabado?",
+"fecha" : "14/02/15"
+},
+
+{
+"autor": "marta",
+"avatar": "avatar.jpg",
+"titulo": "finde libre",
+"contenido" : "cualquier dia del fin de semana me parece bien. Estoy libre en el trabajo, asi que cuando querais ; )",
+"fecha" : "15/02/15"
+}]
